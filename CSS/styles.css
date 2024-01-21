@@ -119,6 +119,13 @@ p{
     font-family:'montserrat',cursive ;
     font-size: 1em;
 }
+
+  .contact-me p{
+    margin-top: 0;
+    color: #0F1035;
+    font-family:'montserrat',cursive ;
+    font-size: 1em;
+  }
   .skill{
     margin-left: 20%;
   }
