@@ -21,6 +21,11 @@ p{
   color: #BF3131;
   font-family:'montserrat',cursive ;
   font-size: 2em;
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .tab{
@@ -43,7 +48,7 @@ p{
   margin:0;
 }
 .middle-container{
-  height: 970px;
+  height: 1100px;
   background-color: #DED0B6;
   margin:0;
 
@@ -74,6 +79,7 @@ p{
 .mountain1{
   margin-top:-200px;
   align:center;
+
 }
 
 #contact{
@@ -91,7 +97,7 @@ p{
       margin-right: 0.5rem;
   }
 
-  .social a {
+  .social span {
       text-decoration: none;
       color: blue;
       margin: 1rem 0;
@@ -119,18 +125,11 @@ p{
     font-family:'montserrat',cursive ;
     font-size: 1em;
 }
-
-  .contact-me p{
-    margin-top: 0;
-    color: #0F1035;
-    font-family:'montserrat',cursive ;
-    font-size: 1em;
-  }
   .skill{
-    margin-left: 20%;
+    margin-left: 25%;
   }
 .hobimg{
-  margin-right: 30%;
+  margin-right: 25%;
 }
 .hobbie{
   margin-left: 20%;
@@ -138,3 +137,246 @@ p{
 .hob{
   margin-right: 30%;
 }
+.d1{
+border-left: : 50px;
+}
+.social svg{
+  color: blue;
+}
+.profile p{
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: justify;
+}
+.hob p{
+  margin-top: 0;
+  color: black;
+  font-family:'montserrat',cursive ;
+  font-size: 1em;
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* Sticky-top with animation */
+.page-header.is-sticky {
+    background: #222222;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    animation: slideDown .7s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+header {
+    background: #DED0B6;
+
+    /* animation: slideDown 0.35s ease-out; */
+}
+
+.logo h1 {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#DED0B6;
+}
+
+.main-header nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-header ul {
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.main-header ul li {
+    padding: 2.188rem 1.1rem;
+}
+
+.main-header ul li a {
+    color: black;
+    font-weight: 600;
+    font-size: 1.1rem;
+    opacity: 1;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+.main-header ul li a:hover {
+  color: black;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon div {
+    margin-right: 3.125rem;
+    margin-left: 1.375rem;
+}
+
+.nav-icon button {
+    background: var(--primary-color);
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    border: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.menu {
+    display: none;
+    color: #fff;
+    font-size: 1.9rem;
+    margin-right: 1rem;
+}
+
+.menu i {
+    color: #fff;
+}
+
+/* NAVIGATION END */
+
+/* SECTION-1 START */
+.section-1 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 4rem;
+}
+
+.section-1-bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.section-1-bg h1 {
+    position: relative;
+    font-size: 9rem;
+    line-height: 9rem;
+}
+
+.section-1-bg .img {
+    margin-right: 5rem;
+}
+
+.section-1-bg .img img {
+    filter: drop-shadow(0rem 0rem 6rem #55e6a5);
+    width: 100%;
+}
+
+/* text on image part */
+.section-1-bg i {
+    position: absolute;
+    left: 0.2rem;
+    top: 19rem;
+}
+
+/* SECTION-2 START*/
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.section-2 img {
+    width: calc(100% - 6%);
+    height: 100%;
+}
+
+.section-2 .social {
+    display: flex;
+    place-content: center;
+    writing-mode: vertical-rl;
+    margin-right: 0.5rem;
+}
+
+.social a {
+    text-decoration: none;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 2652px) and (min-width: 1441px) {
+    html {
+        font-size: 100%;
+    }
+
+    body {
+        width: 50%;
+        margin: auto;
+        background: #000;
+    }
+}
+
+@media screen and (max-width: 1110px) and (min-width: 769px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 100%;
+    }
+
+    .py-5 {
+        padding: 3rem 0;
+    }
+
+    .menu {
+        display: block;
+        margin-right: 1rem;
+        font-size: 2.3rem;
+    }
+
+    .main-header {
+        padding: 1rem 1rem;
+    }
+
+    .main-header ul {
+        position: absolute;
+        flex-direction: column;
+        background: #000;
+        width: 100%;
+        left: 0;
+        top: 5rem;
+        z-index: 1;
+    }
+
+    #addClass {
+        display: none;
+    }
+
+    .nav-icon div {
+        margin-right: 1.5rem;
+        margin-left: 1.1rem;
+        display: none;
+    }
+
+    /* Nav bar responsie End */
